@@ -1,0 +1,133 @@
+/* Global reset and basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  padding: 20px;
+   font-size: 19px;
+    line-height: 2.6;
+    background-color: #a1ff02;
+    margin: 29px 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+/* Container styles */
+#a0 {
+  max-width: 600px;
+  margin: auto;
+  background-color: #013a0f;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+#a1 {
+  text-align: center;
+  color: #a88787;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+#tableForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#inputID {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.glow-on-hover {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3dd60f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.glow-on-hover:hover {
+  background-color: #06a00d;
+}
+
+/* Time-table styles */
+.time-table {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+.time-table p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.time-table p:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #a0 {
+    padding: 15px;
+  }
+
+  #tableForm {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #inputID {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .glow-on-hover {
+    margin-top: 10px;
+  }
+
+  .time-table {
+    padding: 15px;
+  }
+
+  .time-table p {
+    font-size: 14px;
+  }
+}
